@@ -1,0 +1,11 @@
+@import './base.less';
+@import './mixin.less';
+@import './style.css';
+
+@flex-wrap: -webkit-box;
+.flex-item { display: block; -webkit-box-flex: 1; }
+.nav { display: @flex-wrap; background: #fff; .border-1px(rgba(7, 17, 27, .1)); }
+.nav{
+	.nav-item { .flex-item; height: 40px; line-height: 40px; text-align: center; font-size: 14px; color: #4d555d; }
+	.active { color: rgb(240, 20, 20); }
+}	
